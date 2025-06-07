@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
   chainWebpack: config => {
     // Handle images in assets/images and subfolders
     config.module
