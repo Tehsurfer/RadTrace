@@ -1,0 +1,23 @@
+{
+  "name": "milk-journey-app",
+  "version": "1.0.0",
+  "description": "A mobile-first Vue 3 application that compares the journey of different milks from farm to table.",
+  "main": "src/main.ts",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "element-plus": "^2.10.1",
+    "leaflet": "^1.9.4",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.5.0",
+    "typescript": "^4.0.0"
+  },
+  "author": "",
+  "license": "MIT"
+}
