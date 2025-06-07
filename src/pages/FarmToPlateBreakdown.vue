@@ -120,16 +120,14 @@ export default defineComponent({
       const folder = milkTypeToFolder(milk);
       const stepList = steps[milk];
       const step = stepList && stepList[idx];
-      const fallback = require('@/images/placeholder.png');
+      // Use /images/... path for public folder (relative to site root)
+      const fallback = '/images/placeholder.png';
       if (!step || !step.image) {
         return fallback;
       }
       const imageFile = step.image;
-      try {
-        return require(`@/images/${folder}/${imageFile}`);
-      } catch (e) {
-        return fallback;
-      }
+      // Images should be in public/images/<folder>/<imageFile>
+      return `/images/${folder}/${imageFile}`;
     }
 
     function milkTypeToFolder(milkType) {
