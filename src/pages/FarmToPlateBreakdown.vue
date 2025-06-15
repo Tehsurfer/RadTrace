@@ -7,7 +7,7 @@
     <div v-if="selectedMilk">
       <h2>{{ selectedMilk }}</h2>
       <el-carousel
-        height="400px"
+        height="500px"
         indicator-position="outside"
         style="margin-bottom: 32px;"
         @change="onSlideChange"
@@ -260,10 +260,14 @@ h1 {
   width: 130px;
   font-size: 0.98em;
   font-weight: 500;
+  display: inline-block;
+  vertical-align: top;
 }
 .step-metric-value {
   font-size: 0.98em;
   margin-left: 6px;
+  word-wrap: break-word;
+  max-width: 400px;
 }
 
 .cumulative-bars {
